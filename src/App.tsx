@@ -1,4 +1,4 @@
-import {Taskbar} from "@components/Taskbar";
+import { Taskbar } from "@components/Taskbar";
 
 function App() {
   return (

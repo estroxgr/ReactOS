@@ -10,7 +10,8 @@ export default defineConfig({
        '@reducers': path.resolve(__dirname, 'src/store/reducers'),
        '@helpers': path.resolve(__dirname, 'src/helpers'),
        '@assets': path.resolve(__dirname, 'src/assets'),
-       '@hooks': path.resolve(__dirname, 'src/hooks')
+       '@hooks': path.resolve(__dirname, 'src/hooks'),
+       '@store': path.resolve(__dirname, 'src/store')
     }
   },
   plugins: [react()],

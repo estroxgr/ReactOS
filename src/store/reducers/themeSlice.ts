@@ -1,8 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+
 interface ThemeState {
   darkMode: boolean;
-  background:string;
+  background: string;
   locale: "en" | "gr";
 }
 

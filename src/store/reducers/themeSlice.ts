@@ -4,7 +4,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 interface ThemeState {
   darkMode: boolean;
   background: string;
-  locale: "en" | "gr";
+  locale: "en-US" | "el-GR";
 }
 
 const initialThemeState: ThemeState = JSON.parse(
@@ -12,7 +12,7 @@ const initialThemeState: ThemeState = JSON.parse(
     JSON.stringify({
       darkMode: true,
       background:'bg1',
-      locale: "en",
+      locale: "en-US",
     })
 );
 

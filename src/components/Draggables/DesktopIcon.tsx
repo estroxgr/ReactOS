@@ -1,17 +1,25 @@
 import { DIStyle, DIProps } from "@types";
+import Draggable from "react-draggable";
 
 // hooks
 import { useRef } from "react";
+import useWindow from "@hooks/useWindow";
 
-// components
-import Draggable from "react-draggable";
 
 function DesktopIcon({ icon }: DIProps) {
+
+  const {setWindowState } = useWindow(icon);
+
+  // handle window opener
+  const openWindow = () => {
+    setWindowState(true)
+  }
+
   const icRef = useRef<HTMLDivElement>(null);
 
   return (
     <Draggable nodeRef={icRef} bounds="parent">
-      <div ref={icRef} style={styles.areabox}>
+      <div ref={icRef} style={styles.areabox} onClick={openWindow}>
         <div style={styles.icon} data-icon={icon}></div>
         <div style={styles.label}>{icon}</div>
       </div>

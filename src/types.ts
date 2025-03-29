@@ -1,5 +1,11 @@
 import { CSSProperties } from "react";
 
+
+// available windows
+export type WindowType = "profile" | "terminal" | "settings";
+
+
+
 /**
  *   DESKTOP ICONS
  *
@@ -12,5 +18,8 @@ export interface DIStyle {
 }
 
 export interface DIProps {
-  icon: string;
+  icon: WindowType;
 }
+
+
+
